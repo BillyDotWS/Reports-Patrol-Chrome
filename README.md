@@ -16,5 +16,5 @@ How to use this chrome addon, as a report patrol member.
 
 # 💻 How to contribute:
 How to help advance the extension & report any issues.
-> - If you understand x, feel free to make a pull request with fixes/features.
-> - If you just have ideas/issues, please create a GitHub issue here with the appropriate tags.
+> - If you understand Javascript and the Chrome API, feel free to make a pull request with fixes/features.
+> - If you just have ideas/issues, please create a GitHub issue [here](https://github.com/CookieBilly/Reports-Patrol-Chrome/issues) with the appropriate tags.
