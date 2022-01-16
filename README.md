@@ -1,6 +1,5 @@
 ![Report patrol icon](https://i.imgur.com/ClF5Ebf.png)
-# Reports Patrol
-A chrome addon for report patrol on Mineplex that makes life easier
+A chrome addon for Report Patrol on the Mineplex Network (https://mineplex.com/reportpatrol) that makes life easier for Moderators. This chrome addon adds extra quality of life tools to the Moderator view of handling forum reports, it has multiple features to make logging & responding to reports faster and reduce fuss.
 
 # 📝 How to install:
 How to install this chrome addon to your browser.
