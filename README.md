@@ -1,3 +1,4 @@
+![Report patrol icon](https://i.imgur.com/ClF5Ebf.png)
 # Reports Patrol
 A chrome addon for report patrol on Mineplex that makes life easier
 
