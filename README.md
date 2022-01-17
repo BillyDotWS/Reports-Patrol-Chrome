@@ -3,7 +3,7 @@ A chrome addon for Report Patrol on the Mineplex Network (https://mineplex.com/r
 
 # 📝 How to install:
 How to install this chrome addon to your browser.
-> - Download the extension (Click the green Code dropdown and click "Download Zip".
+> - Download the extension (Click [here](https://github.com/CookieBilly/Reports-Patrol-Chrome/archive/refs/heads/stable.zip)).
 > - Extract the files into their own folder.
 > - Give the extension files a permanent home. Chrome will need access when you use it.
 > - Navigate to [chrome://extensions/](chrome://extensions/)
