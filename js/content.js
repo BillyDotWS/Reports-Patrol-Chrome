@@ -80,7 +80,7 @@ function showOptions() {
 }
 
 function markDenied() {
-    let linkItem = document.querySelector('a[href$="moderation_macro_id=94"]')
+    let linkItem = document.querySelector('a[href$="moderation_macro_id=95"]')
     if(!linkItem) return notify('Option not found', false)
 
     linkItem.click()
@@ -94,7 +94,7 @@ function markDenied() {
 }
 
 function markAccepted() {
-    let linkItem = document.querySelector('a[href$="moderation_macro_id=95"]')
+    let linkItem = document.querySelector('a[href$="moderation_macro_id=94"]')
     if(!linkItem) return notify('Option not found', false)
 
     linkItem.click()
