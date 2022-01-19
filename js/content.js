@@ -51,7 +51,7 @@ try {
                         </select>
                     </div>
                     <div class="ext-form-row">
-                        <div class="ext-alert"></div>
+                        <div class="ext-alert ext-hidden"></div>
                         <button class="add-punishment-btn">Add</button>
                     </div>
                 </div>
@@ -104,7 +104,8 @@ function markBedrock() {
 
 function notify(txt, ok = true) {
     let extAlert = document.querySelector('.ext-alert')
-    extAlert.innerText = txt
+    extAlert.innerHTML = txt
+    extAlert.classList.remove('ext-hidden')
 
     if(ok) {
         extAlert.classList.add('ext-alert-ok')
@@ -115,48 +116,28 @@ function notify(txt, ok = true) {
         extAlert.classList.remove('ext-alert-ok')
     }
 
-    setTimeout(() => extAlert.innerText = '', 3000)
+    setTimeout(() => {
+        extAlert.innerText = ''
+        extAlert.classList.add('ext-hidden')
+    }, 3000)
 }
 
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+    notify(request.msg, request.success)
+})
+
 function reportPunishment() {
-    const reportURL = 'https://reportspatrol.mineplex.com/update_punishments.php'
-    
     let offender = document.querySelector('#ext-offender').value
     let offence = document.querySelector('#ext-offence').value
     let category = document.querySelector('#ext-category').value
     let severity = document.querySelector('#ext-severity').value
     let status = document.querySelector('#ext-status').value
 
-    chrome.runtime.sendMessage({}, async cookie => {
-        if(!cookie) return notify('No cookie found for Reports Patrol', false)
-
-        let options = {
-            method: 'POST',
-            mode: 'cors',
-            headers: {
-                cookie: `${cookie.name}=${cookie.value}`
-            },
-            body: new URLSearchParams({
-                punishment_offender: offender,
-                punishment_offense: offence,
-                punishment_category: category,
-                punishment_severity: severity,
-                punishment_status: status,
-                punishment_id: '',
-                operation: 'Add'
-            })
-        }
-
-        try {
-            let response = await fetch(reportURL, options)
-            if(!response.ok) throw new Error(response.status)
-
-            notify(await response.text())
-        } 
-        catch (error) {
-            console.log(error)
-            if(error.message) notify(error.message, false)
-            else notify(error, false)
-        }
+    chrome.runtime.sendMessage({
+        offender, 
+        offence, 
+        category, 
+        severity, 
+        status
     })
 }
