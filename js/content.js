@@ -7,7 +7,7 @@ try {
     sidebar.insertAdjacentHTML(
         'beforeend',
         `<div class="section widget-single">
-            <div class="secondaryContent widget sidebar-widget WidgetFramework_WidgetRenderer_Threads" style="style="background-color: #1e252f;width: 110%;height: 150%;margin-left: -4%;    padding: 6pt !important;
+            <div class="secondaryContent widget sidebar-widget WidgetFramework_WidgetRenderer_Threads" style="background-color: #1e252f;width: 110%;height: 150%;margin-left: -4%;    padding: 6pt !important;
     margin-right: 100p;/* margin-bottom: 0pt !important; */border-bottom: 4px solid rgb(250, 159, 1);">
                 <h3>Report Actions</h3>
                 <div class="options">
