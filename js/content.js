@@ -86,7 +86,7 @@ function markNoEvidence() {
         if(!macroForm) return notify('Evidence popup not found', false)
 
         macroForm.submit()
-    }, 750)
+    }, 100)
 }
 
 function markBedrock() {
@@ -100,7 +100,7 @@ function markBedrock() {
         if(!macroForm) return notify('Bedrock popup not found', false)
 
         macroForm.submit()
-    }, 750)
+    }, 100)
 }
 
 function notify(txt, ok = true) {
