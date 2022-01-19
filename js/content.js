@@ -12,7 +12,7 @@ try {
             <div class="section widget-single">
                 <div class="secondaryContent widget sidebar-widget WidgetFramework_WidgetRenderer_Threads">
                     <h3 style="background-color: #1e252f;width: 102%;height: 150%;margin-left: -4%; padding: 6pt !important;
-        margin-right: 100p;/* margin-bottom: 0pt !important; */border-bottom: 4px solid rgb(250, 159, 1);">Report Actions</h3>
+        margin-right: 100p;/* margin-bottom: 0pt !important; */border-bottom: 4px solid rgb(250, 159, 1);margin-top: -4%;">Report Actions</h3>
                     <div class="options">
                         <button style="color: #fff;background-color: #28a745;border-color: #28a745;" class="button success ext-mark-accepted">✔ Mark Accepted</button>
                         <button style="color: #fff;background-color: #dc3545;border-color: #dc3545;" class="button danger ext-mark-denied">❌ Mark Rejected</button>
