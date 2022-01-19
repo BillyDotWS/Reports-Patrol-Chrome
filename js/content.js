@@ -12,7 +12,7 @@ try {
     margin-right: 100p;/* margin-bottom: 0pt !important; */border-bottom: 4px solid rgb(250, 159, 1);">Report Actions</h3>
                 <div class="options">
                     <button class="button success ext-mark-accepted">✔ Mark Accepted</button>
-                    <button class="button danger ext-mark-denied">❌ Mark Denied</button>
+                    <button class="button danger ext-mark-denied">❌ Mark Rejected</button>
                     <button class="button primary ext-mark-bedrock">Mark Bedrock</button>
                     <button class="button primary ext-mark-no-evidence">No Evidence</button>
                     <button class="button primary ext-show-options">Options</button>
@@ -62,6 +62,8 @@ try {
         </div>`
     )
 
+    document.querySelector('.ext-mark-accepted').onclick = markAccepted
+    document.querySelector('.ext-mark-denied').onclick = markDenied
     document.querySelector('.add-punishment-btn').onclick = reportPunishment
     document.querySelector('.ext-mark-bedrock').onclick = markBedrock
     document.querySelector('.ext-mark-no-evidence').onclick = markNoEvidence
@@ -75,6 +77,34 @@ catch (error) {
 function showOptions() {
     let menu = document.querySelector("#XenForoUniq1")
     if(menu) menu.style = 'display: block; visibility: visible; left: 594.391px; top: 465.828px;'
+}
+
+function markDenied() {
+    let linkItem = document.querySelector('a[href$="moderation_macro_id=94"]')
+    if(!linkItem) return notify('Option not found', false)
+
+    linkItem.click()
+
+    setTimeout(() => {
+        let macroForm = document.querySelector('form[action$="apply-moderation-macro"]')
+        if(!macroForm) return notify('Confirmation popup not found', false)
+
+        macroForm.submit()
+    }, 100)
+}
+
+function markAccepted() {
+    let linkItem = document.querySelector('a[href$="moderation_macro_id=95"]')
+    if(!linkItem) return notify('Option not found', false)
+
+    linkItem.click()
+
+    setTimeout(() => {
+        let macroForm = document.querySelector('form[action$="apply-moderation-macro"]')
+        if(!macroForm) return notify('Confirmation popup not found', false)
+
+        macroForm.submit()
+    }, 100)
 }
 
 function markNoEvidence() {
