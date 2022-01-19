@@ -1,0 +1,75 @@
+.ext-form-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+}
+
+.ext-form-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.ext-form-row {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.ext-form-row:last-child {
+    justify-content: flex-end;
+}
+
+.ext-form-row input, select {
+    flex-grow: 1;
+    padding: 5px 10px;
+    border: 1.5px solid #ccc;
+    border-radius: 2px;
+}
+
+.ext-form-row input, select:focus {
+    outline: none;
+}
+
+.ext-form-row label {
+    min-width: 60px;
+}
+
+.ext-alert {
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+.ext-alert-ok {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.ext-alert-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.add-punishment-btn {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.add-punishment-btn:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.ext-hidden {
+    display: none;
+}
