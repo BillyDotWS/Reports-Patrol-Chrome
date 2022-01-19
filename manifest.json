@@ -1,46 +1,28 @@
 {
-  "name": "CHANGE THIS : Extension boilerplate",
-  "version": "0.0.1",
-  "manifest_version": 2,
-  "description": "This extension was created with the awesome extensionizr.com",
-  "homepage_url": "http://extensionizr.com",
-  "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
-  },
-  "default_locale": "en",
-  "background": {
-    "page": "src/bg/background.html",
-    "persistent": true
-  },
-  "options_page": "src/options_custom/index.html",
-  "page_action": {
-    "default_icon": "icons/icon19.png",
-    "default_title": "page action demo",
-    "default_popup": "src/page_action/page_action.html"
-  },
-  "permissions": [
-    "contextMenus",
-    "cookies",
-    "https://www.mineplex.com/threads/player-report-on*"
-  ],
-  "content_scripts": [
-    {
-      "matches": [
-        "https://www.google.com/*"
-      ],
-      "css": [
-        "src/inject/inject.css"
-      ]
+    "name": "Reports Patrol",
+    "version": "1.0",
+    "manifest_version": 3,
+    "author": "Mohsin Ali",
+    "homepage_url": "https://fiverr.com/mohsinaliryk",
+    "background": {
+        "service_worker": "sw.js"
     },
-    {
-      "matches": [
-        "https://www.google.com/*"
-      ],
-      "js": [
-        "src/inject/inject.js"
-      ]
-    }
-  ]
+    "icons": {
+        "24": "icons/24.png",
+        "32": "icons/32.png",
+        "48": "icons/48.png",
+        "64": "icons/64.png",
+        "128": "icons/128.png",
+        "256": "icons/256.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.mineplex.com/threads/*"],
+            "js": ["js/content.js"],
+            "css": ["css/content.css"],
+            "run_at": "document_end"
+        }
+    ],
+    "host_permissions": ["*://reportspatrol.mineplex.com/*"],
+    "permissions": ["cookies"]
 }
