@@ -4,6 +4,9 @@ try {
     let ruleBreaker = texts.find(txt => txt.startsWith('Name of Rule Breaker(s):'))?.split(':')?.[1].trim()
     let brokenRule = texts.find(txt => txt.startsWith('Broken Rule'))?.split(':')?.[1].trim()
     
+    console.log(ruleBreaker)
+    console.log(brokenRule)
+    
     sidebar.insertAdjacentHTML(
         'beforeend',
         `<div class="section widget-single">
