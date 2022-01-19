@@ -2,8 +2,8 @@
     "name": "Reports Patrol",
     "version": "1.0",
     "manifest_version": 3,
-    "author": "Mohsin Ali",
-    "homepage_url": "https://fiverr.com/mohsinaliryk",
+    "author": "CookieBilly",
+    "homepage_url": "https://github.com/CookieBilly",
     "background": {
         "service_worker": "sw.js"
     },
