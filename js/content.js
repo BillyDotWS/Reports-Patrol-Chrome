@@ -119,6 +119,8 @@ function notify(txt, ok = true) {
 }
 
 function reportPunishment() {
+    const reportURL = 'https://reportspatrol.mineplex.com/update_punishments.php'
+    
     let offender = document.querySelector('#ext-offender').value
     let offence = document.querySelector('#ext-offence').value
     let category = document.querySelector('#ext-category').value
