@@ -12,11 +12,10 @@ How to install this chrome addon to your browser.
 # 🚀 How to use:
 How to use this chrome addon, as a report patrol member.
 > - Login to the report patrol panel (you must be logged in).
-> - Open a report on the website, a panel should appear (Bottom left)
+> - Open a report on the website, a panel should appear (Right of the report)
 > - Change the pre-filled details based on the offense.
-> - Mark the report as Denied or Accepted and click "Submit".
-> - Watch the magic happen, a reply will automatically be sent & the punishment will be logged.
-> - Once done with reports, load the panel and execute the punishments
+> - Click submit, then click an Accept/Deny button, based on normal guidelines.
+> - Once done with reports, continue as you normally would in game.
 
 # 💻 How to contribute:
 How to help advance the extension & report any issues.
